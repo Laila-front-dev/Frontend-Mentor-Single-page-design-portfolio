@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Single-page design portfolio</title>
+    <!-- CSS LINK STYLE -->
+    <link rel="stylesheet" href="scss/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="d-flex">
+          <img src="./assets/images/logo.svg" alt="logo image" />
+          <button class="button" data-type="primary">Free Consultation</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero__section">
+        <div class="container | flow">
+          <h1 class="heading-1">Design solutions made easy</h1>
+          <p>
+            With over ten years of experience in various design disciplines, I’m
+            your one-stop shop for your design needs.
+          </p>
+        </div>
+      </section>
+      <section class="grid__section">
+        <div class="container">
+          <div class="cards__grid">
+            <div
+              class="card__grid padding-block-start-3 padding-inline-3 | d-grid grid-row-span-2 bg-accent-400 clr-neutral-100 fs-300 fw-bold border-radius"
+            >
+              <img
+                src="./assets/images/pattern-graphic-design.svg"
+                alt="graphic design"
+              />
+              <span>Graphic Design</span>
+            </div>
+            <div class="card__grid | grid grid__columns">
+              <div
+                class="bg-primary-400 clr-neutral-100 fs-300 fw-bold border-radius | padding-block-start-3 padding-inline-3 d-grid"
+              >
+                <img src="./assets/images/pattern-ui-ux.svg" alt="ui ux" />
+                <span>UI/UX</span>
+              </div>
+              <div
+                class="bg-primary-200 clr-neutral-100 fs-300 fw-bold border-radius | padding-block-start-3 padding-inline-3 d-grid"
+              >
+                <img src="./assets/images/pattern-apps.svg" alt="apps" />
+                <span>Apps</span>
+              </div>
+            </div>
+            <div
+              class="card__grid padding-block-start-3 padding-inline-3 | d-grid bg-primary-300 clr-neutral-100 fs-300 fw-bold border-radius"
+            >
+              <img
+                src="./assets/images/pattern-illustrations.svg"
+                alt="illustrations"
+              />
+              <span>Illustrations</span>
+            </div>
+            <div
+              class="card__grid padding-block-start-3 padding-inline-3 | d-grid bg-accent-300 clr-neutral-100 fs-300 fw-bold border-radius"
+            >
+              <img
+                src="./assets/images/pattern-photography.svg"
+                alt="photography"
+              />
+              <span>photography</span>
+            </div>
+            <div
+              class="card__grid padding-block-start-3 padding-inline-3 | d-grid bg-accent-900 clr-neutral-100 fs-300 fw-bold border-radius"
+            >
+              <img
+                src="./assets/images/pattern-motion-graphics.svg"
+                alt="motion graphics"
+              />
+              <span>motion graphics</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about__section">
+        <div class="container">
+          <div class="grid | grid__columns align-items">
+            <div>
+              <img src="./assets/images/image-amy.webp" alt="amy image" />
+            </div>
+            <div class="flow">
+              <h2 class="heading-2">
+                I’m Amy, and I’d love to work on your next project
+              </h2>
+              <p>
+                I love working with others to create beautiful design solutions.
+                I’ve designed everything from brand illustrations to complete
+                mobile apps. I’m also handy with a camera!
+              </p>
+              <button class="button" data-type="secondary">
+                Free Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider__section">
+        <h3 class="heading-3">My Work</h3>
+        <div class="slider__container | padding-block-9_5">
+          <div class="slider__image">
+            <img src="./assets/images/image-slide-1.jpg" alt="slider 1" />
+          </div>
+          <div class="slider__image">
+            <img src="./assets/images/image-slide-2.jpg" alt="slider 2" />
+          </div>
+          <div class="slider__image">
+            <img src="./assets/images/image-slide-3.jpg" alt="slider 3" />
+          </div>
+          <div class="slider__image">
+            <img src="./assets/images/image-slide-4.jpg" alt="slider 4" />
+          </div>
+          <div class="slider__image">
+            <img src="./assets/images/image-slide-5.jpg" alt="slider 5" />
+          </div>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__btn | prev" data-type="prev">
+            <img src="./assets/images/icon-arrow-left.svg" alt="" />
+          </button>
+          <button class="slider__btn | next" data-type="next">
+            <img src="./assets/images/icon-arrow-right.svg" alt="" />
+          </button>
+        </div>
+      </section>
+      <section class="details__section">
+        <div class="container">
+          <div
+            class="details grid |d-grid grid__event__columns align-items bg-neutral-900 clr-neutral-100 border-radius-10"
+          >
+            <div class="flow">
+              <h2 class="heading-2">Book a call with me</h2>
+              <p data-type="wide">
+                I’d love to have a chat to see how I can help you. The best
+                first step is for us to discuss your project during a free
+                consultation. Then we can move forward from there.
+              </p>
+            </div>
+            <div>
+              <button class="button" data-type="secondary">
+                Free Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="d-flex">
+          <img src="./assets/images/logo.svg" alt="logo image" />
+          <button class="button" data-type="primary">Free Consultation</button>
+        </div>
+      </div>
+    </footer>
+    <!-- JS FILE -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

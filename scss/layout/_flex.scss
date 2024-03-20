@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: -webkit-fill-available;
+  }
+}

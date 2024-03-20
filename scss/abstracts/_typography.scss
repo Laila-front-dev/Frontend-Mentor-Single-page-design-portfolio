@@ -1,0 +1,55 @@
+$ff-base: "Plus Jakarta Sans", sans-serif;
+
+$ff-body: $ff-base;
+
+$font-sizes: (
+  "small": (
+    "100": 0.875rem,
+    // button
+    "200": 1.625rem,
+    // heading 2
+    "300": 1.5rem,
+    // card text
+    "400": 1.5rem,
+    // work
+    "500": 1rem,
+    // paragraph
+    "600": 2.25rem,
+    // heading 1
+  ),
+  "medium": (
+    "100": 1rem,
+    // button
+    "200": 2rem,
+    // heading 2
+    "400": 2rem,
+    //work
+    "500": 1.125rem,
+    // paragraph
+    "600": 2.75rem,
+    // heading 1
+  ),
+  "large": (
+    "200": 2.5rem,
+    // heading 2
+    "600": 3.5rem,
+    // heading 1
+  ),
+);
+
+$font-size-100: var(--fs-100);
+$font-size-200: var(--fs-200);
+$font-size-300: var(--fs-300);
+$font-size-400: var(--fs-400);
+$font-size-500: var(--fs-500);
+$font-size-600: var(--fs-600);
+
+$fs-body: $font-size-500;
+
+$-fw-500: 500;
+$-fw-700: 700;
+
+$fw-medium: $-fw-500;
+$fw-bold: $-fw-700;
+
+$fw-body: $fw-medium;

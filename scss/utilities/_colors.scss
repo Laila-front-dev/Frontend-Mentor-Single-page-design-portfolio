@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+/* UTILITIES */
+@each $color, $shade-map in $light {
+  @each $shade, $value in $shade-map {
+    .clr-#{$color}-#{$shade} {
+      color: var(--#{$color}-#{$shade});
+    }
+
+    .bg-#{$color}-#{$shade} {
+      background-color: var(--#{$color}-#{$shade});
+    }
+  }
+}

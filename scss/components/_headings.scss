@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+.heading-1 {
+  font-size: $font-size-600;
+  font-weight: $fw-bold;
+}
+
+.heading-2 {
+  font-size: $font-size-200;
+  font-weight: $fw-bold;
+}
+
+.heading-3 {
+  font-size: $font-size-400;
+  font-weight: $fw-bold;
+  text-align: center;
+}

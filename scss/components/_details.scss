@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+
+.details__section {
+  margin-block-start: $size-8;
+  margin-block-end: $size-2_0;
+  text-align: center;
+  @include mq(medium) {
+    margin-block-start: $size-9_0;
+    margin-block-end: $size-3_0;
+  }
+  @include mq(large) {
+    margin-block-start: $size-6_0;
+    text-align: left;
+  }
+  p {
+    color: $color-neutral-100;
+    @include mq(large) {
+      margin-inline: 0;
+    }
+  }
+}
+
+.details {
+  padding-block: 3.063rem;
+  padding-inline: 1.5rem;
+  @include mq(large) {
+    padding-block: 4.563rem;
+    padding-inline: 4rem;
+    justify-content: space-between;
+  }
+}

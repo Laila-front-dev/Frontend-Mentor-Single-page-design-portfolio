@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.hero__section {
+  text-align: center;
+  margin-inline: auto;
+  padding-block-end: $size-1;
+  @include mq(medium) {
+    padding-block-start: $size-5;
+    padding-block-end: $size-4;
+  }
+  @include mq(large) {
+    padding-block-end: $size-6;
+  }
+}

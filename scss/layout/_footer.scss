@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+footer {
+  padding-block-start: $size-2_0;
+  padding-block-end: $size-2;
+  @include mq(medium) {
+    padding-block-start: $size-3_0;
+    padding-block-end: $size-9_0;
+  }
+}

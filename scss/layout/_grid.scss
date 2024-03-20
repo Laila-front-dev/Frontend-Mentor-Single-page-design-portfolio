@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.d-grid {
+  display: grid;
+}
+.grid {
+  display: grid;
+  grid-auto-flow: row;
+  // align-items: center;
+  gap: 1rem;
+}
+.grid__columns {
+  @include mq(medium) {
+    grid-auto-flow: column;
+  }
+}
+.grid__event__columns {
+  @include mq(large) {
+    grid-auto-flow: column;
+  }
+}
+
+.align-items {
+  align-items: center;
+}

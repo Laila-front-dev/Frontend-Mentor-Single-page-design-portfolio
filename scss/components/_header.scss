@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+
+.header {
+  padding-block-start: $size-5;
+  padding-block-end: $size-5;
+}

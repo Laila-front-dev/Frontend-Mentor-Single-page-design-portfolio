@@ -1,0 +1,57 @@
+@use "../abstracts/" as *;
+
+.slider__section {
+  padding-block-start: $size-8;
+  padding-block-end: $size-8;
+  overflow-x: hidden;
+  @include mq(medium) {
+    padding-block-start: $size-9_0;
+    padding-block-end: $size-9_0;
+  }
+  @include mq(large) {
+    padding-block-start: $size-6_0;
+    padding-block-end: $size-6_0;
+  }
+  .slider__container {
+    display: flex;
+    gap: 1rem;
+    // overflow: hidden;
+    &.slider__transition {
+      transition: transform 0.5s ease-in-out;
+    }
+    div {
+      background-color: #979797;
+      border-radius: 10px;
+      max-width: 540px;
+      height: 360px;
+
+      img {
+        max-width: 540px;
+        height: 360px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .slider__controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    .slider__btn {
+      // display: block;
+      background-color: $color-neutral-900;
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.5s ease-in;
+      &[data-type="prev"]:hover,
+      &[data-type="next"]:hover {
+        background-color: $color-accent-400;
+      }
+    }
+  }
+}

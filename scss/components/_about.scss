@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+.about__section {
+  padding-block-start: $size-8;
+  padding-block-end: $size-8;
+  margin-inline: auto;
+  text-align: center;
+  @include mq(medium) {
+    padding-block-start: $size-9_0;
+    padding-block-end: $size-9_0;
+    text-align: left;
+  }
+  @include mq(large) {
+    padding-block-start: $size-10;
+    padding-block-end: $size-6_0;
+  }
+  .grid__columns {
+    gap: $size-6;
+  }
+  @include mq(medium) {
+    .grid__columns {
+      gap: $size-12;
+      img {
+        max-width: 364px;
+      }
+    }
+  }
+  @include mq(large) {
+    .grid__columns {
+      gap: $size-17;
+      img {
+        max-width: 445px;
+      }
+    }
+  }
+}

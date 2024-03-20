@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+p {
+  margin-inline: auto;
+  font-size: $font-size-500;
+  line-height: 26px;
+  color: $color-neutral-600;
+  font-weight: $fw-medium;
+  max-width: 66ch;
+}
+
+p[data-type="wide"] {
+  max-width: 53ch;
+}

@@ -1,0 +1,42 @@
+$-clr-yellow-400: hsl(28, 89%, 67%);
+$-clr-orange-300: hsl(7, 77%, 66%);
+$-clr-pink-200: hsl(0, 78%, 79%);
+$-clr-purple-900: hsl(314, 45%, 23%);
+$-clr-blue-400: hsl(252, 66%, 62%);
+$-clr-green-300: hsl(172, 46%, 57%);
+$-clr-black-900: hsl(0, 0%, 1%);
+$-clr-gray-600: hsl(30, 5%, 45%);
+$-clr-white-100: hsl(28, 100%, 97%);
+
+$light: (
+  "neutral": (
+    "100": $-clr-white-100,
+    "600": $-clr-gray-600,
+    "900": $-clr-black-900,
+  ),
+  "accent": (
+    "300": $-clr-green-300,
+    "400": $-clr-blue-400,
+    "900": $-clr-purple-900,
+  ),
+  "primary": (
+    "200": $-clr-pink-200,
+    "300": $-clr-orange-300,
+    "400": $-clr-yellow-400,
+  ),
+);
+
+$color-neutral-100: var(--neutral-100);
+$color-neutral-600: var(--neutral-600);
+$color-neutral-900: var(--neutral-900);
+
+$color-accent-300: var(--accent-300);
+$color-accent-400: var(--accent-400);
+$color-accent-900: var(--accent-900);
+
+$color-primary-200: var(--primary-200);
+$color-primary-300: var(--primary-300);
+$color-primary-400: var(--primary-400);
+
+$body-text-color: $color-neutral-900;
+$body-bg-color: $color-neutral-100;
