@@ -1496,4 +1496,38 @@ p[data-type=wide] {
 }
 .slider__section .slider__controls .slider__btn[data-type=prev]:hover, .slider__section .slider__controls .slider__btn[data-type=next]:hover {
   background-color: var(--accent-400);
+}
+
+/* Scroll Animation */
+.hidden {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 1s;
+}
+
+.hidden.scroll-right {
+  transform: translateX(200px);
+}
+
+.scroll:nth-child(1) {
+  transition-delay: 200ms;
+}
+
+.scroll:nth-child(2),
+.scroll:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.scroll:nth-child(4) {
+  transition-delay: 800ms;
+}
+
+.scroll:nth-child(5) {
+  transition-delay: 1200ms;
+}
+
+.show,
+.show.scroll-right {
+  opacity: 1;
+  transform: translateX(0);
 }/*# sourceMappingURL=main.css.map */
